@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div id="ACContent">
-        <h2>ASP Control Training Page</h2>
+        <h2>FirstASPNETWebApp: ASP Control Training Page</h2>
         <div class="textBox">
             <h3>ASP:Text Box</h3>
             <h4>Tell us a little bit about yourself</h4>
@@ -74,7 +74,7 @@
             <h4>Selected Colour From Grid View: </h4>
             <asp:Literal ID="ltMessageGV1" runat="server" />
             <br />
-          </div>
+        </div>
     </div>
 
     <script type="text/javascript">

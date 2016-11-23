@@ -103,25 +103,6 @@ namespace FirstASPNETWebApp
 
         }
 
-        /*  protected void LinkButton_Click(object sender, EventArgs e)
-          {
-              string message = string.Format("Control Items Font Colour Now:{0}",
-                  ddlColour.SelectedValue);
-              fcMessage.Text = message;
-
-              txtName.ForeColor = System.Drawing.ColorTranslator.FromHtml(ddlColour.Text);
-              txtEmail.ForeColor = System.Drawing.ColorTranslator.FromHtml(ddlColour.Text);
-              ddlColour.ForeColor = System.Drawing.ColorTranslator.FromHtml(ddlColour.Text);
-
-          } 
-
-          protected void ibSayHelloMax(object sender, EventArgs e)
-          {
-              string message = string.Format("<span style=color:{0};>Hello {1} my name is MAX and my favourite colour is {0}.</span>", "blue",txtName.Text);
-              ibMessage.Text = message;
-          } 
-          */
-
           protected void btnSelectColours_Click(object sender, EventArgs e)
           {
               string message = "Colour Choosen:<br/>";
