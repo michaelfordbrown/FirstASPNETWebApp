@@ -7,20 +7,20 @@
         <div class="textBox" style="font-weight: 700">
             <h3>ASP:Text Box</h3>
             <h4>Tell us a little bit about yourself</h4>
-            <label>Name</label>
-            <asp:TextBox ID="txtName" runat="server" />
-            <asp:RequiredFieldValidator runat="server" ID="rfvName" ControlToValidate="txtName" ErrorMessage="Required." Display="Dynamic" />
+            <label id="NameLabel" class="NameClass">Name</label>
+            <asp:TextBox ID="NameTextBox" runat="server" Width="189px" >First Name , Surename</asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" ID="rfvName" ControlToValidate="NameTextBox" ErrorMessage="Name Required." Display="Dynamic" />
             <br/>
-            <label>Email</label>
-            <asp:TextBox ID="txtEmail" runat="server" />
-            <asp:RegularExpressionValidator runat="server" ID="revEmail" ControlToValidate="txtEmail" ErrorMessage="Valid email address is required" ValidationExpression="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" Display="Dynamic" />
-            <asp:RequiredFieldValidator runat="server" ID="rfvEmail" ControlToValidate="txtEmail" ErrorMessage="Required." Display="Dynamic" />
+            <label id="EmailLabel" class="EMailClass">Email</label>
+            <asp:TextBox ID="EmailTextBox" runat="server" Width="194px" >e.g. bobhope@hollywood.com</asp:TextBox>
+            <asp:RegularExpressionValidator runat="server" ID="revEmail" ControlToValidate="EmailTextBox" ErrorMessage="Valid email address is required" ValidationExpression="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" Display="Dynamic" />
+            <asp:RequiredFieldValidator runat="server" ID="rfvEmail" ControlToValidate="EmailTextBox" ErrorMessage="Required." Display="Dynamic" />
             <br />
         </div>
         <div class="dropDownList">
             <h3>ASP:Drop Down List</h3>
             <label>Your Favorite Colour:</label>
-            <asp:DropDownList ID="ddlColour" runat="server">
+            <asp:DropDownList ID="ColourDropDownList" runat="server" Height="16px" Width="213px">
                 <asp:ListItem Text="Please Choose A Colour" Value="" />
                 <asp:ListItem Text="Red" Value="Red" />
                 <asp:ListItem Text="Orange" Value="Orange" />
@@ -30,7 +30,7 @@
                 <asp:ListItem Text="Indigo" Value="Indigo" />
                 <asp:ListItem Text="Violet" Value="Violet" />
             </asp:DropDownList>
-            <asp:RequiredFieldValidator runat="server" ID="rfvColour" ControlToValidate="ddlColour" ErrorMessage="Colour Required." Display="Dynamic" />
+            <asp:RequiredFieldValidator runat="server" ID="rfvColour" ControlToValidate="ColourDropDownList" ErrorMessage="Colour Required." Display="Dynamic" />
             <br />
         </div>
         <div class="button" style="font-weight: 700">
@@ -41,8 +41,10 @@
             <br />
             <asp:Literal ID="Birthday" runat="server" Text="Birthday"></asp:Literal>
             :<br />
-            <asp:TextBox ID="BirthdayTextBox" runat="server" OnTextChanged="BirthdayTextBox_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="BirthdayTextBox" runat="server" OnTextChanged="BirthdayTextBox_TextChanged" Width="177px"></asp:TextBox>
             <asp:ImageButton ID="BirthdayCalendarImage" runat="server" Height="97px" ImageUrl="~/Images/calendar-300x300.png" OnClick="BirthdayCalendarImage_Click" Width="88px" />
+            <br />
+            <asp:RegularExpressionValidator ID="BirthdayRegularExpressionValidator" runat="server" ControlToValidate="BirthdayTextBox" ErrorMessage="Error: Date (e.g. 1 April 1960) Required." ValidationExpression="^(([0-9])|([0-2][0-9])|([3][0-1]))\-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\-\d{4}$">Error: Date (e.g. 1 April 1960) Required.</asp:RegularExpressionValidator>
             <br />
             <br />
             <asp:Literal ID="BirthdayYear" Text="Year:" runat="server"></asp:Literal>

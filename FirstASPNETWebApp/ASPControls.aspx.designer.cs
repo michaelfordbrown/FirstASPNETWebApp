@@ -13,13 +13,13 @@ namespace FirstASPNETWebApp {
     public partial class WebForm1 {
         
         /// <summary>
-        /// txtName control.
+        /// NameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.TextBox NameTextBox;
         
         /// <summary>
         /// rfvName control.
@@ -31,13 +31,13 @@ namespace FirstASPNETWebApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
         
         /// <summary>
-        /// txtEmail control.
+        /// EmailTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
         
         /// <summary>
         /// revEmail control.
@@ -58,13 +58,13 @@ namespace FirstASPNETWebApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
         
         /// <summary>
-        /// ddlColour control.
+        /// ColourDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlColour;
+        protected global::System.Web.UI.WebControls.DropDownList ColourDropDownList;
         
         /// <summary>
         /// rfvColour control.
@@ -110,6 +110,15 @@ namespace FirstASPNETWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton BirthdayCalendarImage;
+        
+        /// <summary>
+        /// BirthdayRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator BirthdayRegularExpressionValidator;
         
         /// <summary>
         /// BirthdayYear control.

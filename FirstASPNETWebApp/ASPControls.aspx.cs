@@ -73,7 +73,7 @@ namespace FirstASPNETWebApp
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             string message = string.Format("<span style=color:{0};>You said your name is {1}, your email address is {2} and your favourite colour is {3}.</span>",
-               ddlColour.Text, txtName.Text, txtEmail.Text, ddlColour.SelectedValue);
+               ColourDropDownList.Text, NameTextBox.Text, EmailTextBox.Text, ColourDropDownList.SelectedValue);
             ltMessage1.Text = message;
         }
         protected void btnSubmit_Colour(object sender, EventArgs e)
