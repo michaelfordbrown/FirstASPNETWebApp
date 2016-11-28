@@ -85,6 +85,78 @@ namespace FirstASPNETWebApp {
         protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
+        /// Birthday control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Birthday;
+        
+        /// <summary>
+        /// BirthdayTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BirthdayTextBox;
+        
+        /// <summary>
+        /// BirthdayCalendarImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton BirthdayCalendarImage;
+        
+        /// <summary>
+        /// BirthdayYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal BirthdayYear;
+        
+        /// <summary>
+        /// ddxBirthdayYears control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddxBirthdayYears;
+        
+        /// <summary>
+        /// BirthdayMonth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal BirthdayMonth;
+        
+        /// <summary>
+        /// ddxBirthdayMonths control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddxBirthdayMonths;
+        
+        /// <summary>
+        /// BirthdayCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar BirthdayCalendar;
+        
+        /// <summary>
         /// ltMessage1 control.
         /// </summary>
         /// <remarks>

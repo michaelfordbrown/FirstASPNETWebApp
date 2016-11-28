@@ -4,13 +4,13 @@
 
     <div id="ACContent">
         <h2>FirstASPNETWebApp: ASP Control Training Page</h2>
-        <div class="textBox">
+        <div class="textBox" style="font-weight: 700">
             <h3>ASP:Text Box</h3>
             <h4>Tell us a little bit about yourself</h4>
             <label>Name</label>
             <asp:TextBox ID="txtName" runat="server" />
             <asp:RequiredFieldValidator runat="server" ID="rfvName" ControlToValidate="txtName" ErrorMessage="Required." Display="Dynamic" />
-            <br />
+            <br/>
             <label>Email</label>
             <asp:TextBox ID="txtEmail" runat="server" />
             <asp:RegularExpressionValidator runat="server" ID="revEmail" ControlToValidate="txtEmail" ErrorMessage="Valid email address is required" ValidationExpression="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" Display="Dynamic" />
@@ -33,9 +33,35 @@
             <asp:RequiredFieldValidator runat="server" ID="rfvColour" ControlToValidate="ddlColour" ErrorMessage="Colour Required." Display="Dynamic" />
             <br />
         </div>
-        <div class="button">
+        <div class="button" style="font-weight: 700">
             <h3>ASP:Button</h3>
             <asp:Button ID="btnSubmit" runat="server" Text="Submit Info" OnClick="btnSubmit_Click" />
+            <br />
+            <h3>ASP:Calendar</h3>
+            <br />
+            <asp:Literal ID="Birthday" runat="server" Text="Birthday"></asp:Literal>
+            :<br />
+            <asp:TextBox ID="BirthdayTextBox" runat="server" OnTextChanged="BirthdayTextBox_TextChanged"></asp:TextBox>
+            <asp:ImageButton ID="BirthdayCalendarImage" runat="server" Height="97px" ImageUrl="~/Images/calendar-300x300.png" OnClick="BirthdayCalendarImage_Click" Width="88px" />
+            <br />
+            <br />
+            <asp:Literal ID="BirthdayYear" Text="Year:" runat="server"></asp:Literal>
+            <asp:DropDownList ID="ddxBirthdayYears"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddxBirthdayYears_SelectedIndexChanged" >
+            </asp:DropDownList>
+            <asp:Literal ID="BirthdayMonth" Text="Month:" runat="server"></asp:Literal>
+            <asp:DropDownList ID="ddxBirthdayMonths"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddxBirthdayMonths_SelectedIndexChanged" >
+            </asp:DropDownList>
+            <br />
+            <asp:Calendar ID="BirthdayCalendar" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" OnSelectionChanged="BirthdayCalendar_SelectionChanged"  Width="400px" Caption="Select Your Birthday" CaptionAlign="Top" FirstDayOfWeek="Sunday">
+                <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" ForeColor="#333333" Height="10pt" />
+                <DayStyle Width="14%" />
+                <NextPrevStyle Font-Size="8pt" ForeColor="White" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#CC3333" ForeColor="White" />
+                <SelectorStyle BackColor="#CCCCCC" Font-Bold="True" Font-Names="Verdana" Font-Size="8pt" ForeColor="#333333" Width="1%" />
+                <TitleStyle BackColor="Black" Font-Bold="True" Font-Size="13pt" ForeColor="White" Height="14pt" />
+                <TodayDayStyle BackColor="#CCCC99" />
+            </asp:Calendar>
             <br />
         </div>
         <div class="literal">

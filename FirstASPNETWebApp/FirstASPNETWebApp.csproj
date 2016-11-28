@@ -170,6 +170,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\BirthdayMonths.xml" />
+    <Content Include="App_Data\BirthdayYears.xml" />
     <Content Include="App_Data\Colours.xml" />
     <Content Include="ASPControls.aspx" />
     <Content Include="Contact.aspx" />
@@ -183,6 +185,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Properties\PublishProfiles\MichaelFordBrownWebSite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\calendar-300x300.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

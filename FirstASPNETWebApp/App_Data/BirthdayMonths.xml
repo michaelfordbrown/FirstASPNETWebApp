@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BirthdayMonths>
+  <BirthdayMonth>
+    <MonthId>	1	</MonthId>
+    <MonthName>	January	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	2	</MonthId>
+    <MonthName>	February	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	3	</MonthId>
+    <MonthName>	March	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	4	</MonthId>
+    <MonthName>	April	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	5	</MonthId>
+    <MonthName>	May	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	6	</MonthId>
+    <MonthName>	June	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	7	</MonthId>
+    <MonthName>	July	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	8	</MonthId>
+    <MonthName>	August	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	9	</MonthId>
+    <MonthName>	September	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	10	</MonthId>
+    <MonthName>	October	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	11	</MonthId>
+    <MonthName>	November	</MonthName>
+  </BirthdayMonth>
+  <BirthdayMonth>
+    <MonthId>	12	</MonthId>
+    <MonthName>	December	</MonthName>
+  </BirthdayMonth>
+</BirthdayMonths>
