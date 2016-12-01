@@ -35,7 +35,7 @@
         </div>
         <div class="button" style="font-weight: 700">
             <h3>ASP:Button</h3>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit Info" OnClick="btnSubmit_Click" />
+            <asp:Button ID="ProfileSubmitButton" runat="server" Text="Submit Information" OnClick="btnSubmit_Click" />
             <br />
             <h3>ASP:Calendar</h3>
             <br />

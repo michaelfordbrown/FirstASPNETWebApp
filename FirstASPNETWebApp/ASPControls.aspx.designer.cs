@@ -76,13 +76,13 @@ namespace FirstASPNETWebApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvColour;
         
         /// <summary>
-        /// btnSubmit control.
+        /// ProfileSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.Button ProfileSubmitButton;
         
         /// <summary>
         /// Birthday control.
