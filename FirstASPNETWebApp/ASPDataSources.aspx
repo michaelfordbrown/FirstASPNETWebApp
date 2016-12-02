@@ -1,18 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ASPDataSources.aspx.cs" Inherits="FirstASPNETWebApp.ASPDataSources" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ASPDataSources.aspx.cs" Inherits="FirstASPNETWebApp.WebForm3" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <div id="ADContent">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        #form1 {
-            width: 317px;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
         <div style="width: 290px">
             ASP Data Source Example
         </div>
@@ -27,7 +17,7 @@
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:AdventureWorksConnectionString %>"
-             SelectCommand="  SELECT  DISTINCT
+            SelectCommand="  SELECT  DISTINCT
 	                                           [Address].CountryRegion
                                             FROM
 	                                            [AdventureWorks].[SalesLT].[Customer] AS Customer
@@ -36,11 +26,9 @@
                                             INNER JOIN 
 	                                            [AdventureWorks].[SalesLT].[Address] AS [Address] ON CustomerAddress.AddressID = [Address].AddressID
                                             ORDER BY
-	                                            [Address].CountryRegion">
-
-        </asp:SqlDataSource>
+	                                            [Address].CountryRegion"></asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" 
+        <asp:GridView ID="CustomerbyCountryGridView" runat="server"
             DataSourceID="CustomersSqlDataSource" Height="122px" Width="381px" AutoGenerateColumns="False" DataKeyNames="CustomerID" AllowPaging="True" AllowSorting="True">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
@@ -50,7 +38,7 @@
                 <asp:BoundField DataField="CountryRegion" HeaderText="CountryRegion" SortExpression="CountryRegion" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="CustomersSqlDataSource" runat="server" 
+        <asp:SqlDataSource ID="CustomersSqlDataSource" runat="server"
             ConnectionString="<%$ ConnectionStrings:AdventureWorksConnectionString %>"
             SelectCommand="  SELECT  DISTINCT
 	                                           Customer.CustomerID,
@@ -68,17 +56,17 @@
                                             ORDER BY
 	                                            [Address].CountryRegion, Customer.CustomerID">
             <SelectParameters>
-                <asp:ControlParameter Name="SelectedCountry" ControlID="DropDownList1" DefaultValue="NULL"  PropertyName="SelectedValue" Type="String" />
+                <asp:ControlParameter Name="SelectedCountry" ControlID="DropDownList1" DefaultValue="NULL" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
         <p>
-            <asp:DetailsView ID="DetailsView1" runat="server" DataKeyNames="CustomerID" 
+            <asp:DetailsView ID="DetailsView1" runat="server" DataKeyNames="CustomerID"
                 DataSourceID="CustomerSqlDataSource" Height="50px" Width="125px">
                 <Fields>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                 </Fields>
             </asp:DetailsView>
-            <asp:SqlDataSource ID="CustomerSqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:AdventureWorksConnectionString %>" 
+            <asp:SqlDataSource ID="CustomerSqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:AdventureWorksConnectionString %>"
                 SelectCommand="SELECT
                     * 
                 FROM
@@ -86,10 +74,9 @@
                 WHERE 
                  (Customer.CustomerID = @CustomerID)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="GridView1" DefaultValue="0" Name="CustomerID" PropertyName="SelectedValue" Type="Int32" />
+                    <asp:ControlParameter ControlID="CustomerbyCountryGridView" DefaultValue="0" Name="CustomerID" PropertyName="SelectedValue" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
         </p>
-    </form>
-</body>
-</html>
+    </div>
+</asp:Content>

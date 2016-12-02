@@ -10,16 +10,7 @@
 namespace FirstASPNETWebApp {
     
     
-    public partial class ASPDataSources {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class WebForm3 {
         
         /// <summary>
         /// DropDownList1 control.
@@ -40,13 +31,13 @@ namespace FirstASPNETWebApp {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// GridView1 control.
+        /// CustomerbyCountryGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView CustomerbyCountryGridView;
         
         /// <summary>
         /// CustomersSqlDataSource control.

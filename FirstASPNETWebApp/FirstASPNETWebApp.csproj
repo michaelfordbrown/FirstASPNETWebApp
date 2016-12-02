@@ -174,7 +174,6 @@
     <Content Include="App_Data\BirthdayYears.xml" />
     <Content Include="App_Data\Colours.xml" />
     <Content Include="ASPControls.aspx" />
-    <Content Include="ASPDataSources.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -184,6 +183,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="ASPDataSources.aspx" />
     <None Include="Properties\PublishProfiles\MichaelFordBrownWebSite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\calendar-300x300.png" />
@@ -361,13 +361,6 @@
     <Compile Include="ASPControls.aspx.designer.cs">
       <DependentUpon>ASPControls.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPDataSources.aspx.cs">
-      <DependentUpon>ASPDataSources.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ASPDataSources.aspx.designer.cs">
-      <DependentUpon>ASPDataSources.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -415,6 +408,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPDataSources.aspx.cs">
+      <DependentUpon>ASPDataSources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPDataSources.aspx.designer.cs">
+      <DependentUpon>ASPDataSources.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
